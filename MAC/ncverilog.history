@@ -1,0 +1,55 @@
+s1(03Jul2022:16:25:44):  ncverilog mac.v -c 
+s2(03Jul2022:16:28:03):  ncverilog mac.v -c 
+s3(03Jul2022:16:30:17):  ncverilog mac.v -c 
+s4(03Jul2022:16:30:45):  ncverilog mac.v -c 
+s5(03Jul2022:16:31:59):  ncverilog mac.v -c 
+s6(03Jul2022:16:32:43):  ncverilog mac.v -c 
+s7(03Jul2022:16:34:14):  ncverilog mac.v -c 
+s8(03Jul2022:16:35:12):  ncverilog mac.v -c 
+s9(03Jul2022:16:36:03):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s10(03Jul2022:16:44:11):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s11(03Jul2022:16:45:18):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s12(03Jul2022:17:11:13):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s13(03Jul2022:17:24:08):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s14(03Jul2022:17:29:17):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s15(03Jul2022:17:29:35):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s16(03Jul2022:17:30:48):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s17(05Jul2022:17:35:52):  ncverilog mac.v -c 
+s18(05Jul2022:17:37:25):  ncverilog mac.v -c 
+s19(06Jul2022:10:39:51):  ncverilog mac.v -c 
+s20(06Jul2022:10:39:57):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s21(06Jul2022:10:54:26):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s22(06Jul2022:11:10:09):  ncverilog mac.v -c 
+s23(06Jul2022:11:10:19):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s24(06Jul2022:13:13:14):  ncverilog mac.v -c 
+s25(06Jul2022:13:13:18):  ncverilog mac.v -c 
+s26(06Jul2022:13:13:43):  ncverilog mac.v -c 
+s27(06Jul2022:13:13:48):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s28(06Jul2022:13:14:20):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s29(06Jul2022:13:14:33):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s30(06Jul2022:13:16:44):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s31(06Jul2022:13:37:15):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s32(06Jul2022:13:37:26):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s33(06Jul2022:13:47:19):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s34(06Jul2022:13:48:07):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s35(06Jul2022:13:52:52):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s36(06Jul2022:13:53:03):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s37(06Jul2022:13:59:45):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s38(06Jul2022:14:03:55):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s39(06Jul2022:14:06:16):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s40(06Jul2022:14:07:27):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s41(06Jul2022:14:14:33):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s42(06Jul2022:14:15:55):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s43(06Jul2022:14:16:04):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s44(06Jul2022:14:25:47):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s45(06Jul2022:14:26:04):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s46(06Jul2022:14:41:33):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s47(06Jul2022:14:42:43):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s48(06Jul2022:15:07:02):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s49(06Jul2022:15:10:28):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s50(06Jul2022:16:07:13):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s51(06Jul2022:16:07:23):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s52(06Jul2022:16:20:52):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s53(06Jul2022:16:21:51):  ncverilog testfixture.v mac.v +access+r +nc64bit 
+s54(06Jul2022:16:34:25):  ncverilog testfixture.v mac_syn.v tsmc13.v +access+r +nc64bit 
+s55(06Jul2022:16:34:33):  ncverilog testfixture.v mac_syn.v tsmc13.v +access+r +nc64bit 
