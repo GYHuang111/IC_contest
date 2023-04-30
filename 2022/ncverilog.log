@@ -1,0 +1,123 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 02, 2023 at 17:21:47 CST
+ncverilog
+	tb.sv
+	JAM_syn.v
+	tsmc13_neg.v
+	+access+r
+	+define+FSDB
+	+define+SDF
+	+nc64bit
+	+define+P3
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: JAM_syn.v
+	module worklib.JAM_DW01_add_0:v
+		errors: 0, warnings: 0
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  JAM_DW01_add_0 add_77 ( .A(Cost_SUM), .B({1'b0, 1'b0, 1'b0, Cost}), .CI(1'b0), .SUM({N187, N186, N185, N184, N183, N182, N181, N180, N179, N178}) );
+                      |
+ncelab: *W,CUVWSP (./JAM_syn.v,151|22): 1 output port was not connected:
+ncelab: (./JAM_syn.v,8): CO
+
+  DFFX1 \cnt_dly_reg[3]  ( .D(n1315), .CK(CLK), .QN(n500) );
+                       |
+ncelab: *W,CUVWSP (./JAM_syn.v,158|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFTRX1 \state_reg[2]  ( .D(n1426), .RN(Valid), .CK(CLK), .QN(n483) );
+                       |
+ncelab: *W,CUVWSP (./JAM_syn.v,210|23): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19518): Q
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./JAM_syn.sdf"
+        .MinCost(MinCost),
+                       |
+ncelab: *W,CUVMPW (./tb.sv,40|23): port sizes differ in port connection (9/10).
+	Annotating SDF timing data:
+		Compiled SDF file:     JAM_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_JAM
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 5502  Annotated = 52.58% -- No. of Tchecks = 1430  Annotated = 17.48% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        5502	        2893	       52.58
+		       $hold	          64	           0	        0.00
+		      $width	         482	         124	       25.73
+		  $setuphold	         884	         126	       14.25
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.JAM:v <0x303297c6>
+			streams:   0, words:     0
+		worklib.testfixture:sv <0x38ff7ef4>
+			streams:  14, words: 30936
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1428     530
+		UDPs:                     303      12
+		Primitives:              3503      10
+		Timing outputs:          1576     510
+		Registers:                241     192
+		Scalar wires:            1794       -
+		Expanded wires:             7       1
+		Vectored wires:             1       -
+		Always blocks:              4       4
+		Initial blocks:             8       8
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:           2314      67
+		Interconnect:            2731       -
+		Delayed tcheck signals:   696     635
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'JAM.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   3
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  81  60  60  65  96  60  65  96
+worker1:  96  60  66  96  60  60  60  81
+worker2:  96  66  60  99  60  81  65  65
+worker3:  66  96  80  99  81  81  96  60
+worker4:  81  96  65  96  60  96  60  81
+worker5:  60  96  80  96  80  60  81  60
+worker6:  99  60  99  65  80  80  81  66
+worker7:  65  60  60  99  99  80  60  96
+----------------------------------------------------------------------
+Get Valid at cycle:    362877
+receive MinCost/MatchCount= 485/ 9 , golden MinCost/MatchCount= 485/ 9
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+Simulation complete via $finish(1) at time 3628765 NS + 0
+./tb.sv:186                 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 02, 2023 at 17:21:59 CST  (total: 00:00:12)

@@ -1,0 +1,52 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : SME
+Version: T-2022.03
+Date   : Wed Jul 20 22:38:35 2022
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   1.4611 mW   (91%)
+  Net Switching Power  = 139.9682 uW    (9%)
+                         ---------
+Total Dynamic Power    =   1.6010 mW  (100%)
+
+Cell Leakage Power     =  97.5899 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.2301            0.0000            0.0000            0.0000  (   0.00%)  i
+register       2.7227e-02        2.9521e-02        1.2615e+07            1.2994  (  76.50%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2038            0.1104        8.4974e+07            0.3992  (  23.50%)
+--------------------------------------------------------------------------------------------------
+Total              1.4611 mW         0.1400 mW     9.7590e+07 pW         1.6986 mW

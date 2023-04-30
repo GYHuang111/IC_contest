@@ -1,0 +1,61 @@
+s1(08Feb2023:16:43:47):  ncverilog JAM.sv -c 
+s2(08Feb2023:16:43:59):  ncverilog JAM.sv -c -sv 
+s3(08Feb2023:16:44:09):  ncverilog JAM.sv -c -sv 
+s4(08Feb2023:16:44:27):  ncverilog JAM.sv -c -sv 
+s5(08Feb2023:16:45:05):  ncverilog tb.sv JAM.sv +define+P1 
+s6(08Feb2023:16:45:17):  ncverilog tb.sv JAM.sv +define+P1+nc64bit 
+s7(08Feb2023:16:45:20):  ncverilog tb.sv JAM.sv +define+P1+nc64bits 
+s8(08Feb2023:16:46:09):  ncverilog tb.sv JAM.sv +define+P1+nc64bit 
+s9(08Feb2023:16:46:41):  ncverilog tb.sv JAM.sv +access+r+define+P1+nc64bit 
+s10(08Feb2023:16:46:49):  ncverilog tb.sv JAM.sv +access+r +define+P1+nc64bit 
+s11(08Feb2023:16:47:08):  ncverilog tb.sv JAM.sv +access+r +define+P1 
+s12(08Feb2023:16:48:33):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s13(08Feb2023:16:50:16):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s14(08Feb2023:20:26:51):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s15(08Feb2023:20:32:46):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s16(08Feb2023:20:44:24):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s17(08Feb2023:20:57:33):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s18(08Feb2023:21:02:21):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s19(08Feb2023:21:11:43):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s20(08Feb2023:21:13:44):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s21(08Feb2023:21:15:01):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s22(08Feb2023:21:22:27):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s23(08Feb2023:21:22:46):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s24(08Feb2023:21:27:08):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s25(08Feb2023:21:36:41):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s26(08Feb2023:21:38:16):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s27(08Feb2023:21:39:07):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s28(08Feb2023:21:39:30):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s29(08Feb2023:21:42:29):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s30(08Feb2023:21:43:21):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s31(08Feb2023:21:44:11):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s32(08Feb2023:21:45:30):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s33(08Feb2023:21:47:40):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s34(08Feb2023:21:48:31):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s35(08Feb2023:21:49:15):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s36(08Feb2023:21:49:56):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s37(08Feb2023:21:56:25):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s38(08Feb2023:21:56:35):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s39(08Feb2023:21:58:52):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s40(08Feb2023:22:11:56):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s41(08Feb2023:22:17:56):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s42(10Feb2023:15:04:34):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s43(10Feb2023:15:40:44):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s44(10Feb2023:15:41:24):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s45(10Feb2023:15:41:32):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P2 
+s46(10Feb2023:15:41:35):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P3 
+s47(10Feb2023:15:42:34):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P3 
+s48(10Feb2023:15:42:39):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P2 
+s49(10Feb2023:15:42:42):  ncverilog tb.sv JAM.sv +nc64bit +access+r +define+FSDB +define+P1 
+s50(10Feb2023:15:51:27):  ncverilog tb.sv JAM_syn.v +nc64bit +access+r +define+FSDB +define+P1 
+s51(10Feb2023:15:54:34):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +nc64bit +access+r +define+FSDB +define+P1 
+s52(10Feb2023:15:57:22):  ncverilog tb.sv JAM_syn.v /usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +nc64bit +access+r +define+FSDB +define+P1 
+s53(10Feb2023:15:58:03):  ncverilog tb.sv JAM_syn.v /usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +nc64bit +access+r +define+FSDB +define+P1 +define+SDF 
+s54(10Feb2023:15:58:49):  ncverilog tb.sv JAM_syn.v /usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +nc64bit +access+r +define+FSDB +define+P2 +define+SDF 
+s55(10Feb2023:15:59:08):  ncverilog tb.sv JAM_syn.v /usr/cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v +nc64bit +access+r +define+FSDB +define+P3 +define+SDF 
+s56(02Mar2023:17:19:40):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit 
+s57(02Mar2023:17:20:27):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit 
+s58(02Mar2023:17:20:52):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit +define+tb1 
+s59(02Mar2023:17:21:08):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit +define+tb2 
+s60(02Mar2023:17:21:30):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit +define+P2 
+s61(02Mar2023:17:21:47):  ncverilog tb.sv JAM_syn.v tsmc13_neg.v +access+r +define+FSDB +define+SDF +nc64bit +define+P3 
