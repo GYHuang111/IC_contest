@@ -1,0 +1,241 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Feb 23, 2023 at 19:39:43 CST
+ncverilog
+	testfixture.v
+	DT_syn.v
+	tsmc13_neg.v
+	+access+r
+	+define+SDF
+	+define+TB2
+	+define+FSDB
+	+nc64bit
+file: testfixture.v
+	module worklib.testfixture:v
+		errors: 0, warnings: 0
+	module worklib.sti_ROM:v
+		errors: 0, warnings: 0
+	module worklib.res_RAM:v
+		errors: 0, warnings: 0
+file: DT_syn.v
+	module worklib.DT_DW01_inc_0_DW01_inc_1:v
+		errors: 0, warnings: 0
+	module worklib.DT_DW01_inc_1_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.DT_DW01_inc_2_DW01_inc_3:v
+		errors: 0, warnings: 0
+	module worklib.DT_DW01_inc_3_DW01_inc_4:v
+		errors: 0, warnings: 0
+	module worklib.DT_DW01_inc_4_DW01_inc_5:v
+		errors: 0, warnings: 0
+	module worklib.DT_DW01_inc_5_DW01_inc_6:v
+		errors: 0, warnings: 0
+	module worklib.DT:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFX1 \res_addr_latch_reg[1]  ( .D(n370), .CK(clk), .QN(n422) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,218|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[7]  ( .D(n364), .CK(clk), .QN(n428) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,219|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[8]  ( .D(n363), .CK(clk), .QN(n429) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,220|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[9]  ( .D(n362), .CK(clk), .QN(n430) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,221|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[10]  ( .D(n361), .CK(clk), .QN(n431) );
+                               |
+ncelab: *W,CUVWSP (./DT_syn.v,222|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[11]  ( .D(n360), .CK(clk), .QN(n432) );
+                               |
+ncelab: *W,CUVWSP (./DT_syn.v,223|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[12]  ( .D(n359), .CK(clk), .QN(n433) );
+                               |
+ncelab: *W,CUVWSP (./DT_syn.v,224|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[0]  ( .D(n371), .CK(clk), .QN(n421) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,225|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[3]  ( .D(n368), .CK(clk), .QN(n424) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,226|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[4]  ( .D(n367), .CK(clk), .QN(n425) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,227|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[5]  ( .D(n366), .CK(clk), .QN(n426) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,228|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[6]  ( .D(n365), .CK(clk), .QN(n427) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,229|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \res_addr_latch_reg[2]  ( .D(n369), .CK(clk), .QN(n423) );
+                              |
+ncelab: *W,CUVWSP (./DT_syn.v,230|30): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \STATE_reg[2]  ( .D(N123), .CK(clk), .QN(n864) );
+                     |
+ncelab: *W,CUVWSP (./DT_syn.v,292|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \STATE_reg[1]  ( .D(N122), .CK(clk), .Q(STATE[1]) );
+                     |
+ncelab: *W,CUVWSP (./DT_syn.v,295|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): QN
+
+  DFFXL \res_addr_latch_reg[13]  ( .D(n358), .CK(clk), .QN(n685) );
+                               |
+ncelab: *W,CUVWSP (./DT_syn.v,310|31): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17818): Q
+
+  DFFX1 \pixel_reg_reg[3][3]  ( .D(n330), .CK(clk), .QN(n407) );
+                            |
+ncelab: *W,CUVWSP (./DT_syn.v,329|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \pixel_reg_reg[3][1]  ( .D(n332), .CK(clk), .QN(n409) );
+                            |
+ncelab: *W,CUVWSP (./DT_syn.v,330|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+  DFFX1 \pixel_reg_reg[2][6]  ( .D(n335), .CK(clk), .QN(n405) );
+                            |
+ncelab: *W,CUVWSP (./DT_syn.v,333|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,17873): Q
+
+	Reading SDF file from location "./DT_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     DT_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_dut
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 4902  Annotated = 48.12% -- No. of Tchecks = 1494  Annotated = 20.88% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        4902	        2359	       48.12
+		       $hold	          64	           0	        0.00
+		      $width	         514	         156	       30.35
+		  $setuphold	         916	         156	       17.03
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.DT:v <0x521e0220>
+			streams:   0, words:     0
+		worklib.res_RAM:v <0x62255c8f>
+			streams:   5, words:  2343
+		worklib.sti_ROM:v <0x3908d1ed>
+			streams:   3, words:  1565
+		worklib.testfixture:v <0x23932f31>
+			streams:  11, words: 18092
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1169     537
+		UDPs:                     370      12
+		Primitives:              3206      10
+		Timing outputs:          1390     498
+		Registers:                248     183
+		Scalar wires:            1626       -
+		Expanded wires:            24       2
+		Always blocks:              4       4
+		Initial blocks:            11      11
+		Pseudo assignments:         1       1
+		Timing checks:           2410      80
+		Interconnect:            2136       -
+		Delayed tcheck signals:   728     651
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'DT.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Dumping the MDA (testfixture.u_sti_ROM.sti_M).
+*Verdi* : Dumping the MDA (testfixture.u_res_RAM.res_M).
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+ Output pixel: 0 ~           0 are correct!
+
+ Output pixel: 0 ~        1000 are correct!
+
+ Output pixel: 0 ~        2000 are correct!
+
+ Output pixel: 0 ~        3000 are correct!
+
+ Output pixel: 0 ~        4000 are correct!
+
+ Output pixel: 0 ~        5000 are correct!
+
+ Output pixel: 0 ~        6000 are correct!
+
+ Output pixel: 0 ~        7000 are correct!
+
+ Output pixel: 0 ~        8000 are correct!
+
+ Output pixel: 0 ~        9000 are correct!
+
+ Output pixel: 0 ~       10000 are correct!
+
+ Output pixel: 0 ~       11000 are correct!
+
+ Output pixel: 0 ~       12000 are correct!
+
+ Output pixel: 0 ~       13000 are correct!
+
+ Output pixel: 0 ~       14000 are correct!
+
+ Output pixel: 0 ~       15000 are correct!
+
+ Output pixel: 0 ~       16000 are correct!
+
+-------------------------------------------------------------
+
+Congratulations!!! All data have been generated successfully!
+
+---------- The test result is ..... PASS --------------------
+
+                                                     
+
+-----------------------------------------------------
+
+Simulation complete via $finish(1) at time 963990741 PS + 0
+./testfixture.v:174       #(`CYCLE/3); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Feb 23, 2023 at 19:39:50 CST  (total: 00:00:07)

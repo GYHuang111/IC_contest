@@ -1,0 +1,306 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Jun 28, 2022 at 23:33:39 CST
+ncverilog
+	testfixture1.v
+	set_syn3.v
+	tsmc13.v
+	+access+r
+	+nc64bit
+	+define+MD1
+file: testfixture1.v
+	module worklib.testfixture1:v
+		errors: 0, warnings: 0
+file: set_syn3.v
+	module worklib.din_FF:v
+		errors: 0, warnings: 0
+	module worklib.set_counting_enable:v
+		errors: 0, warnings: 0
+	module worklib.FSM:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_0:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_8:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_7:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_6:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_5:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_4:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_3:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_2:v
+		errors: 0, warnings: 0
+	module worklib.multi_table_1:v
+		errors: 0, warnings: 0
+	module worklib.counter:v
+		errors: 0, warnings: 0
+	module worklib.counter2:v
+		errors: 0, warnings: 0
+	module worklib.set_counter_DW01_inc_0_DW01_inc_1:v
+		errors: 0, warnings: 0
+	module worklib.set_counter:v
+		errors: 0, warnings: 0
+	module worklib.SET:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \cout_reg[3]  ( .D(N7), .CK(clk), .RN(n2), .Q(cout[3]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,522|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[1]  ( .D(N5), .CK(clk), .RN(n2), .Q(cout[1]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,523|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[2]  ( .D(N6), .CK(clk), .RN(n2), .Q(cout[2]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,524|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFSX1 \cout_reg[0]  ( .D(n1), .CK(clk), .SN(n2), .Q(cout[0]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,525|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18500): QN
+
+  DFFRX1 \cout_reg[3]  ( .D(n13), .CK(clk), .RN(n5), .Q(cout[3]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,547|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[7]  ( .D(n4), .CK(clk), .RN(n1), .Q(cout[7]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,592|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[6]  ( .D(n5), .CK(clk), .RN(n1), .Q(cout[6]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,593|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[5]  ( .D(n6), .CK(clk), .RN(n1), .Q(cout[5]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,594|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[4]  ( .D(n7), .CK(clk), .RN(n1), .Q(cout[4]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,595|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[3]  ( .D(n8), .CK(clk), .RN(n1), .Q(cout[3]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,596|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[2]  ( .D(n9), .CK(clk), .RN(n1), .Q(cout[2]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,597|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[1]  ( .D(n10), .CK(clk), .RN(n1), .Q(cout[1]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,598|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+  DFFRX1 \cout_reg[0]  ( .D(n11), .CK(clk), .RN(n1), .Q(cout[0]) );
+                     |
+ncelab: *W,CUVWSP (./set_syn3.v,599|21): 1 output port was not connected:
+ncelab: (./tsmc13.v,18240): QN
+
+	Reading SDF file from location "SET_syn3.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     SET_syn3.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture1.u_set
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 4350  Annotated = 36.87% -- No. of Tchecks = 1522  Annotated = 21.81% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        4350	        1604	       36.87
+		       $hold	          64	           0	        0.00
+		      $width	         528	         166	       31.44
+		  $setuphold	         930	         166	       17.85
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,299|7): The interconnect source testfixture1.u_set.MT2.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U210.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,271|7): The interconnect source testfixture1.u_set.MT1.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U210.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,299|7): The interconnect source testfixture1.u_set.MT2.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U209.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,271|7): The interconnect source testfixture1.u_set.MT1.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U209.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,411|7): The interconnect source testfixture1.u_set.MT6.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U206.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,383|7): The interconnect source testfixture1.u_set.MT5.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U206.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,411|7): The interconnect source testfixture1.u_set.MT6.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U205.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,383|7): The interconnect source testfixture1.u_set.MT5.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U205.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,355|7): The interconnect source testfixture1.u_set.MT4.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U202.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,327|7): The interconnect source testfixture1.u_set.MT3.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U202.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,355|7): The interconnect source testfixture1.u_set.MT4.U4.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U201.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,327|7): The interconnect source testfixture1.u_set.MT3.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.U201.B.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,495|7): The interconnect source testfixture1.u_set.MT9.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.SCE.U30.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,467|7): The interconnect source testfixture1.u_set.MT8.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.SCE.U27.A.  The port annotation will still occur.
+  assign out[0] = out_0;
+       |
+ncelab: *W,SDFNCAP (./set_syn3.v,439|7): The interconnect source testfixture1.u_set.MT7.U3.Y is separated by a unidirectional continuous assign from the destination testfixture1.u_set.SCE.U26.A.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SET:v <0x6e489f7a>
+			streams:   0, words:     0
+		worklib.multi_table_0:v <0x040cac06>
+			streams:   0, words:     0
+		worklib.multi_table_1:v <0x4926b61b>
+			streams:   0, words:     0
+		worklib.multi_table_2:v <0x4c73498a>
+			streams:   0, words:     0
+		worklib.multi_table_3:v <0x01595397>
+			streams:   0, words:     0
+		worklib.multi_table_4:v <0x1da9b0e9>
+			streams:   0, words:     0
+		worklib.multi_table_5:v <0x5083aaf4>
+			streams:   0, words:     0
+		worklib.multi_table_6:v <0x55d65565>
+			streams:   0, words:     0
+		worklib.multi_table_7:v <0x18fc4f78>
+			streams:   0, words:     0
+		worklib.multi_table_8:v <0x548bf4fc>
+			streams:   0, words:     0
+		worklib.set_counter:v <0x3f1e8975>
+			streams:   0, words:     0
+		worklib.testfixture1:v <0x0832b8de>
+			streams:  11, words: 17661
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  988     545
+		UDPs:                     300      12
+		Primitives:              2777      10
+		Timing outputs:          1174     548
+		Registers:                222     176
+		Scalar wires:            1418       -
+		Expanded wires:            38       3
+		Always blocks:              2       2
+		Initial blocks:             7       7
+		Cont. assignments:          0      29
+		Pseudo assignments:         2       2
+		Timing checks:           2452      69
+		Interconnect:            1257       -
+		Delayed tcheck signals:   166      61
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SET_syn.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+--------------------------- [ Function 1. Simulation START !! ] ---------------------------
+ Pattern           0 at Mode 0 is PASS !
+ Pattern           1 at Mode 0 is PASS !
+ Pattern           2 at Mode 0 is PASS !
+ Pattern           3 at Mode 0 is PASS !
+ Pattern           4 at Mode 0 is PASS !
+ Pattern           5 at Mode 0 is PASS !
+ Pattern           6 at Mode 0 is PASS !
+ Pattern           7 at Mode 0 is PASS !
+ Pattern           8 at Mode 0 is PASS !
+ Pattern           9 at Mode 0 is PASS !
+ Pattern          10 at Mode 0 is PASS !
+ Pattern          11 at Mode 0 is PASS !
+ Pattern          12 at Mode 0 is PASS !
+ Pattern          13 at Mode 0 is PASS !
+ Pattern          14 at Mode 0 is PASS !
+ Pattern          15 at Mode 0 is PASS !
+ Pattern          16 at Mode 0 is PASS !
+ Pattern          17 at Mode 0 is PASS !
+ Pattern          18 at Mode 0 is PASS !
+ Pattern          19 at Mode 0 is PASS !
+ Pattern          20 at Mode 0 is PASS !
+ Pattern          21 at Mode 0 is PASS !
+ Pattern          22 at Mode 0 is PASS !
+ Pattern          23 at Mode 0 is PASS !
+ Pattern          24 at Mode 0 is PASS !
+ Pattern          25 at Mode 0 is PASS !
+ Pattern          26 at Mode 0 is PASS !
+ Pattern          27 at Mode 0 is PASS !
+ Pattern          28 at Mode 0 is PASS !
+ Pattern          29 at Mode 0 is PASS !
+ Pattern          30 at Mode 0 is PASS !
+ Pattern          31 at Mode 0 is PASS !
+ Pattern          32 at Mode 0 is PASS !
+ Pattern          33 at Mode 0 is PASS !
+ Pattern          34 at Mode 0 is PASS !
+ Pattern          35 at Mode 0 is PASS !
+ Pattern          36 at Mode 0 is PASS !
+ Pattern          37 at Mode 0 is PASS !
+ Pattern          38 at Mode 0 is PASS !
+ Pattern          39 at Mode 0 is PASS !
+ Pattern          40 at Mode 0 is PASS !
+ Pattern          41 at Mode 0 is PASS !
+ Pattern          42 at Mode 0 is PASS !
+ Pattern          43 at Mode 0 is PASS !
+ Pattern          44 at Mode 0 is PASS !
+ Pattern          45 at Mode 0 is PASS !
+ Pattern          46 at Mode 0 is PASS !
+ Pattern          47 at Mode 0 is PASS !
+ Pattern          48 at Mode 0 is PASS !
+ Pattern          49 at Mode 0 is PASS !
+ Pattern          50 at Mode 0 is PASS !
+ Pattern          51 at Mode 0 is PASS !
+ Pattern          52 at Mode 0 is PASS !
+ Pattern          53 at Mode 0 is PASS !
+ Pattern          54 at Mode 0 is PASS !
+ Pattern          55 at Mode 0 is PASS !
+ Pattern          56 at Mode 0 is PASS !
+ Pattern          57 at Mode 0 is PASS !
+ Pattern          58 at Mode 0 is PASS !
+ Pattern          59 at Mode 0 is PASS !
+ Pattern          60 at Mode 0 is PASS !
+ Pattern          61 at Mode 0 is PASS !
+ Pattern          62 at Mode 0 is PASS !
+ Pattern          63 at Mode 0 is PASS !
+--------------------------- Simulation FINISH !!---------------------------
+============================================================================
+
+ \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+
+============================================================================
+Simulation complete via $finish(1) at time 42930 NS + 0
+./testfixture1.v:131 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Jun 28, 2022 at 23:33:40 CST  (total: 00:00:01)

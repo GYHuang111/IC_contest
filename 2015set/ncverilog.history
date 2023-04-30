@@ -1,0 +1,76 @@
+s1(26Jun2022:19:31:36):  ncverilog set.v -c 
+s2(26Jun2022:19:32:20):  ncverilog set.v -c 
+s3(26Jun2022:19:34:55):  ncverilog set.v -c 
+s4(26Jun2022:19:35:58):  ncverilog set.v -c 
+s5(26Jun2022:19:36:14):  ncverilog set.v -c 
+s6(26Jun2022:19:37:07):  ncverilog set.v -c 
+s7(26Jun2022:19:38:18):  ncverilog set.v -c 
+s8(26Jun2022:19:40:46):  ncverilog set.v -c 
+s9(26Jun2022:19:41:57):  ncverilog set.v -c 
+s10(26Jun2022:19:42:30):  ncverilog set.v -c 
+s11(26Jun2022:19:43:02):  ncverilog set.v -c 
+s12(26Jun2022:19:45:19):  ncverilog set.v -c 
+s13(26Jun2022:19:45:22):  ncverilog set.v -c 
+s14(26Jun2022:19:46:59):  ncverilog set.v -c 
+s15(26Jun2022:19:48:20):  ncverilog set.v -c 
+s16(26Jun2022:19:49:40):  ncverilog set.v -c 
+s17(26Jun2022:19:52:11):  ncverilog set.v -c 
+s18(26Jun2022:19:53:18):  ncverilog set.v -c 
+s19(26Jun2022:19:53:34):  ncverilog set.v -c 
+s20(26Jun2022:19:56:56):  ncverilog set.v -c 
+s21(26Jun2022:19:58:02):  ncverilog set.v -c 
+s22(26Jun2022:20:26:15):  ncverilog testfixture1.v -c 
+s23(26Jun2022:20:28:53):  ncverilog testfixture1.v set.v +access+r +nc64bit 
+s24(26Jun2022:20:29:47):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s25(26Jun2022:20:30:20):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s26(26Jun2022:20:31:34):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s27(26Jun2022:20:40:28):  ncverilog set.v -c 
+s28(26Jun2022:20:40:33):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s29(27Jun2022:22:41:49):  ncverilog set.v -c 
+s30(27Jun2022:22:41:58):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s31(27Jun2022:22:44:04):  ncverilog set.v -c 
+s32(27Jun2022:22:44:06):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s33(27Jun2022:22:51:55):  ncverilog set.v -c 
+s34(27Jun2022:22:51:57):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s35(27Jun2022:22:54:28):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s36(27Jun2022:23:28:30):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s37(27Jun2022:23:40:12):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s38(27Jun2022:23:49:40):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s39(27Jun2022:23:58:42):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s40(27Jun2022:23:59:25):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s41(28Jun2022:00:06:49):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s42(28Jun2022:00:43:02):  ncverilog set.v -c 
+s43(28Jun2022:00:43:06):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD1 
+s44(28Jun2022:00:43:17):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD2 
+s45(28Jun2022:00:43:26):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD3 
+s46(28Jun2022:00:43:35):  ncverilog testfixture1.v set.v +access+r +nc64bit +define+MD4 
+s47(28Jun2022:00:54:48):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD4 
+s48(28Jun2022:00:56:00):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD4 
+s49(28Jun2022:00:56:20):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD4 
+s50(28Jun2022:15:07:10):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD4 
+s51(28Jun2022:15:07:24):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD1 
+s52(28Jun2022:15:07:44):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD1 
+s53(28Jun2022:15:10:08):  ncverilog testfixture1.v set_syn.v tsmc13.v -c 
+s54(28Jun2022:15:10:26):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD1 
+s55(28Jun2022:15:49:43):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD1 
+s56(28Jun2022:15:49:51):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD4 
+s57(28Jun2022:15:49:55):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD2 
+s58(28Jun2022:15:50:00):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD3 
+s59(28Jun2022:15:50:13):  ncverilog testfixture1.v set_syn.v tsmc13.v +access+r +nc64bit +define+MD3 
+s60(28Jun2022:18:54:16):  ncverilog testfixture1.v set_syn2.v tsmc13.v -c 
+s61(28Jun2022:18:54:27):  ncverilog testfixture1.v set_syn2.v tsmc13.v +access+r +nc64bit +define+MD3 
+s62(28Jun2022:19:00:22):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD3 
+s63(28Jun2022:23:25:48):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD3 
+s64(28Jun2022:23:25:52):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD1 
+s65(28Jun2022:23:25:56):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD2 
+s66(28Jun2022:23:26:02):  ncverilog testfixture1.v set.v tsmc13.v +access+r +nc64bit +define+MD4 
+s67(28Jun2022:23:29:33):  ncverilog testfixture1.v set_syn3.v tsmc13.v -c 
+s68(28Jun2022:23:30:24):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD4 
+s69(28Jun2022:23:30:29):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD3 
+s70(28Jun2022:23:30:35):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD2 
+s71(28Jun2022:23:30:39):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD1 
+s72(28Jun2022:23:30:45):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD4 
+s73(28Jun2022:23:32:56):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD4 
+s74(28Jun2022:23:33:31):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD3 
+s75(28Jun2022:23:33:35):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD2 
+s76(28Jun2022:23:33:39):  ncverilog testfixture1.v set_syn3.v tsmc13.v +access+r +nc64bit +define+MD1 
