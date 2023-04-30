@@ -1,0 +1,88 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Mar 29, 2023 at 13:02:56 CST
+ncverilog
+	tb.sv
+	LASER.v
+	+define+USECOLOR
+	+access+r
+	+nc64bit
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: LASER.v
+	module worklib.LASER:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LASER:v <0x2eeba5f7>
+			streams:  34, words: 51871
+		worklib.testfixture:sv <0x4fac8b99>
+			streams:  35, words: 60467
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  2       2
+		Registers:               80      80
+		Scalar wires:             3       -
+		Vectored wires:           8       -
+		Always blocks:           19      19
+		Initial blocks:          12      12
+		Cont. assignments:        3       3
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LASER.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*******************************
+** Simulation Start          **
+*******************************
+== PATTERN img1.pattern
+---- Used Cycle:      30721
+---- Get Return: C1(11,12),C2( 4,10)
+---- cover =  30, optimum =  30
+== PATTERN img2.pattern
+---- Used Cycle:      30720
+---- Get Return: C1( 5,11),C2(11, 6)
+---- cover =  28, optimum =  28
+== PATTERN img3.pattern
+---- Used Cycle:      30720
+---- Get Return: C1( 5,10),C2(10, 5)
+---- cover =  29, optimum =  29
+== PATTERN img4.pattern
+---- Used Cycle:      30720
+---- Get Return: C1(10, 5),C2( 4, 9)
+---- cover =  30, optimum =  30
+== PATTERN img5.pattern
+---- Used Cycle:      30720
+---- Get Return: C1( 8,11),C2( 2,10)
+---- cover =  23, optimum =  23
+== PATTERN img6.pattern
+---- Used Cycle:      30720
+---- Get Return: C1( 9, 9),C2(13, 2)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =     184576  **
+**   Cover total = 170/170   **
+*******************************
+Simulation complete via $finish(1) at time 1476604 NS + 0
+./tb.sv:254                  $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Mar 29, 2023 at 13:03:02 CST  (total: 00:00:06)
