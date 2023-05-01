@@ -30,7 +30,7 @@ reg [11:0] radius_pat_mem[0:63];
 reg [7:0] expected_mem [0:63];
 
 
-initial $sdf_annotate("SET_syn3.sdf", u_set);
+initial $sdf_annotate("SET_syn.sdf", u_set);
 
 
 initial begin

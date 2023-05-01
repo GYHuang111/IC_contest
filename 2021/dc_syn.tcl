@@ -1,5 +1,5 @@
 #Read All Files
-read_file -format sverilog  geofence2.sv
+read_file -format sverilog  geofence.sv
 #read_file -format sverilog  geofence.v
 current_design geofence
 link

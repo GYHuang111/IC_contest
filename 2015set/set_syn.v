@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////
 // Created by: Synopsys DC Expert(TM) in wire load mode
 // Version   : T-2022.03
-// Date      : Tue Jun 28 00:53:03 2022
+// Date      : Tue Jun 28 23:28:52 2022
 /////////////////////////////////////////////////////////////
 
 
@@ -108,19 +108,19 @@ module din_FF ( clk, reset, en, central_next, radius_next, mode_next, central,
   OAI2BB2XL U20 ( .B0(n3), .B1(n80), .A0N(central[0]), .A1N(n82), .Y(n53) );
   OAI2BB2XL U21 ( .B0(n4), .B1(n80), .A0N(central[1]), .A1N(n82), .Y(n54) );
   OAI2BB2XL U22 ( .B0(n5), .B1(n80), .A0N(central[2]), .A1N(n82), .Y(n55) );
-  OAI2BB2XL U23 ( .B0(n6), .B1(n80), .A0N(central[3]), .A1N(n82), .Y(n56) );
+  OAI2BB2XL U23 ( .B0(n6), .B1(n80), .A0N(n78), .A1N(central[3]), .Y(n56) );
   OAI2BB2XL U24 ( .B0(n7), .B1(n80), .A0N(central[4]), .A1N(n82), .Y(n57) );
-  OAI2BB2XL U25 ( .B0(n8), .B1(n80), .A0N(central[5]), .A1N(n82), .Y(n58) );
-  OAI2BB2XL U26 ( .B0(n9), .B1(n80), .A0N(n78), .A1N(central[6]), .Y(n59) );
+  OAI2BB2XL U25 ( .B0(n8), .B1(n81), .A0N(central[5]), .A1N(n82), .Y(n58) );
+  OAI2BB2XL U26 ( .B0(n9), .B1(n80), .A0N(central[6]), .A1N(n82), .Y(n59) );
   OAI2BB2XL U27 ( .B0(n10), .B1(n80), .A0N(central[7]), .A1N(n82), .Y(n60) );
-  OAI2BB2XL U28 ( .B0(n11), .B1(n81), .A0N(central[8]), .A1N(n82), .Y(n61) );
+  OAI2BB2XL U28 ( .B0(n11), .B1(n80), .A0N(central[8]), .A1N(n82), .Y(n61) );
   OAI2BB2XL U29 ( .B0(n12), .B1(n80), .A0N(central[9]), .A1N(n82), .Y(n62) );
   OAI2BB2XL U30 ( .B0(n13), .B1(n80), .A0N(central[10]), .A1N(n82), .Y(n63) );
   OAI2BB2XL U31 ( .B0(n14), .B1(n80), .A0N(central[11]), .A1N(n82), .Y(n64) );
-  OAI2BB2XL U32 ( .B0(n15), .B1(n81), .A0N(central[12]), .A1N(n82), .Y(n65) );
+  OAI2BB2XL U32 ( .B0(n15), .B1(n80), .A0N(central[12]), .A1N(n82), .Y(n65) );
   OAI2BB2XL U33 ( .B0(n16), .B1(n80), .A0N(central[13]), .A1N(n82), .Y(n66) );
   OAI2BB2XL U34 ( .B0(n17), .B1(n81), .A0N(central[14]), .A1N(n82), .Y(n67) );
-  OAI2BB2XL U35 ( .B0(n18), .B1(n80), .A0N(central[15]), .A1N(n82), .Y(n68) );
+  OAI2BB2XL U35 ( .B0(n18), .B1(n81), .A0N(central[15]), .A1N(n82), .Y(n68) );
   OAI2BB2XL U36 ( .B0(n19), .B1(n81), .A0N(central[16]), .A1N(n82), .Y(n69) );
   OAI2BB2XL U37 ( .B0(n20), .B1(n81), .A0N(central[17]), .A1N(n82), .Y(n70) );
   OAI2BB2XL U38 ( .B0(n21), .B1(n81), .A0N(central[18]), .A1N(n82), .Y(n71) );
@@ -132,24 +132,6 @@ module din_FF ( clk, reset, en, central_next, radius_next, mode_next, central,
   INVX3 U44 ( .A(reset), .Y(n83) );
   CLKBUFX3 U45 ( .A(en), .Y(n76) );
   CLKBUFX3 U46 ( .A(en), .Y(n78) );
-endmodule
-
-
-module FF ( clk, reset, counting_reset_x_next, counting_reset_y_next, 
-        counting_en_y_next, counting_reset_x, counting_reset_y, counting_en_y
- );
-  input clk, reset, counting_reset_x_next, counting_reset_y_next,
-         counting_en_y_next;
-  output counting_reset_x, counting_reset_y, counting_en_y;
-  wire   n1;
-
-  DFFRX1 counting_en_y_reg ( .D(counting_en_y_next), .CK(clk), .RN(n1), .Q(
-        counting_en_y) );
-  DFFRX1 counting_reset_y_reg ( .D(counting_reset_y_next), .CK(clk), .RN(n1), 
-        .Q(counting_reset_y) );
-  DFFRX1 counting_reset_x_reg ( .D(counting_reset_x_next), .CK(clk), .RN(n1), 
-        .Q(counting_reset_x) );
-  CLKINVX1 U3 ( .A(reset), .Y(n1) );
 endmodule
 
 
@@ -430,15 +412,15 @@ module multi_table_4 ( in, out );
 
   CLKINVX1 U3 ( .A(out[2]), .Y(n1) );
   NAND2X1 U4 ( .A(n16), .B(n15), .Y(out_0) );
-  NAND3X1 U5 ( .A(in[0]), .B(n3), .C(in[2]), .Y(n13) );
-  NAND2X1 U6 ( .A(in[0]), .B(n2), .Y(n16) );
-  CLKINVX1 U7 ( .A(in[2]), .Y(n2) );
-  CLKINVX1 U8 ( .A(in[3]), .Y(n3) );
-  OAI22XL U9 ( .A0(in[1]), .A1(n15), .B0(n4), .B1(n16), .Y(out[3]) );
-  NAND3X1 U10 ( .A(n14), .B(n13), .C(n11), .Y(out[4]) );
-  OAI222XL U11 ( .A0(in[1]), .A1(n14), .B0(n4), .B1(n13), .C0(n12), .C1(n1), 
+  NAND2X1 U5 ( .A(in[0]), .B(n2), .Y(n16) );
+  CLKINVX1 U6 ( .A(in[2]), .Y(n2) );
+  OAI22XL U7 ( .A0(in[1]), .A1(n15), .B0(n4), .B1(n16), .Y(out[3]) );
+  NAND3X1 U8 ( .A(n14), .B(n13), .C(n11), .Y(out[4]) );
+  OAI222XL U9 ( .A0(in[1]), .A1(n14), .B0(n4), .B1(n13), .C0(n12), .C1(n1), 
         .Y(out[5]) );
-  NOR4X1 U12 ( .A(in[2]), .B(in[0]), .C(out[2]), .D(n3), .Y(out[6]) );
+  NOR4X1 U10 ( .A(in[2]), .B(in[0]), .C(out[2]), .D(n3), .Y(out[6]) );
+  NAND3X1 U11 ( .A(in[0]), .B(n3), .C(in[2]), .Y(n13) );
+  CLKINVX1 U12 ( .A(in[3]), .Y(n3) );
   NAND3X1 U13 ( .A(in[0]), .B(n2), .C(in[3]), .Y(n14) );
   XNOR2X1 U14 ( .A(in[3]), .B(in[2]), .Y(n12) );
   NAND2X1 U15 ( .A(in[2]), .B(in[0]), .Y(n15) );
@@ -535,7 +517,7 @@ endmodule
 module counter ( clk, reset, counting_reset, cout );
   output [3:0] cout;
   input clk, reset, counting_reset;
-  wire   N5, N6, N7, N9, N8, N11, N10, \mult_add_241_aco/b , n1, n2, n3, n4;
+  wire   N5, N6, N7, N9, N8, N11, N10, \mult_add_243_aco/b , n1, n2, n3, n4;
 
   DFFRX1 \cout_reg[3]  ( .D(N7), .CK(clk), .RN(n2), .Q(cout[3]) );
   DFFRX1 \cout_reg[1]  ( .D(N5), .CK(clk), .RN(n2), .Q(cout[1]) );
@@ -545,14 +527,14 @@ module counter ( clk, reset, counting_reset, cout );
   XNOR2X1 U4 ( .A(N10), .B(n4), .Y(N6) );
   XNOR2X1 U5 ( .A(N9), .B(n1), .Y(N5) );
   CLKINVX1 U6 ( .A(N8), .Y(n1) );
-  CLKINVX1 U7 ( .A(counting_reset), .Y(\mult_add_241_aco/b ) );
+  CLKINVX1 U7 ( .A(counting_reset), .Y(\mult_add_243_aco/b ) );
   XOR2X1 U8 ( .A(N11), .B(n3), .Y(N7) );
   NOR2BX1 U9 ( .AN(N10), .B(n4), .Y(n3) );
   CLKINVX1 U10 ( .A(reset), .Y(n2) );
-  AND2X1 U11 ( .A(cout[0]), .B(\mult_add_241_aco/b ), .Y(N8) );
-  AND2X1 U12 ( .A(cout[1]), .B(\mult_add_241_aco/b ), .Y(N9) );
-  AND2X1 U13 ( .A(cout[2]), .B(\mult_add_241_aco/b ), .Y(N10) );
-  AND2X1 U14 ( .A(\mult_add_241_aco/b ), .B(cout[3]), .Y(N11) );
+  AND2X1 U11 ( .A(cout[0]), .B(\mult_add_243_aco/b ), .Y(N8) );
+  AND2X1 U12 ( .A(cout[1]), .B(\mult_add_243_aco/b ), .Y(N9) );
+  AND2X1 U13 ( .A(cout[2]), .B(\mult_add_243_aco/b ), .Y(N10) );
+  AND2X1 U14 ( .A(\mult_add_243_aco/b ), .B(cout[3]), .Y(N11) );
 endmodule
 
 
@@ -567,16 +549,16 @@ module counter2 ( clk, reset, counting_reset, counting_en, cout );
   DFFRX1 \cout_reg[0]  ( .D(n16), .CK(clk), .RN(n5), .Q(cout[0]), .QN(n4) );
   DFFRX1 \cout_reg[2]  ( .D(n14), .CK(clk), .RN(n5), .Q(cout[2]), .QN(n2) );
   NAND2X1 U3 ( .A(n1), .B(n9), .Y(n12) );
-  NAND2X1 U4 ( .A(counting_en), .B(n1), .Y(n9) );
-  OA21XL U5 ( .A0(cout[0]), .A1(n9), .B0(n12), .Y(n11) );
-  OA21XL U6 ( .A0(cout[1]), .A1(n9), .B0(n11), .Y(n10) );
-  OAI32X1 U7 ( .A0(n3), .A1(cout[2]), .A2(n8), .B0(n10), .B1(n2), .Y(n14) );
-  OR2X1 U8 ( .A(n9), .B(n4), .Y(n8) );
-  OAI2BB1X1 U9 ( .A0N(cout[3]), .A1N(n6), .B0(n7), .Y(n13) );
-  OR4X1 U10 ( .A(cout[3]), .B(n2), .C(n3), .D(n8), .Y(n7) );
-  OAI21XL U11 ( .A0(cout[2]), .A1(n9), .B0(n10), .Y(n6) );
-  OAI22XL U12 ( .A0(n11), .A1(n3), .B0(cout[1]), .B1(n8), .Y(n15) );
-  CLKINVX1 U13 ( .A(counting_reset), .Y(n1) );
+  CLKINVX1 U4 ( .A(counting_reset), .Y(n1) );
+  NAND2X1 U5 ( .A(counting_en), .B(n1), .Y(n9) );
+  OA21XL U6 ( .A0(cout[0]), .A1(n9), .B0(n12), .Y(n11) );
+  OA21XL U7 ( .A0(cout[1]), .A1(n9), .B0(n11), .Y(n10) );
+  OAI32X1 U8 ( .A0(n3), .A1(cout[2]), .A2(n8), .B0(n10), .B1(n2), .Y(n14) );
+  OR2X1 U9 ( .A(n9), .B(n4), .Y(n8) );
+  OAI2BB1X1 U10 ( .A0N(cout[3]), .A1N(n6), .B0(n7), .Y(n13) );
+  OR4X1 U11 ( .A(cout[3]), .B(n2), .C(n3), .D(n8), .Y(n7) );
+  OAI21XL U12 ( .A0(cout[2]), .A1(n9), .B0(n10), .Y(n6) );
+  OAI22XL U13 ( .A0(n11), .A1(n3), .B0(cout[1]), .B1(n8), .Y(n15) );
   OAI22XL U14 ( .A0(n4), .A1(n12), .B0(cout[0]), .B1(n9), .Y(n16) );
   CLKINVX1 U15 ( .A(reset), .Y(n5) );
 endmodule
@@ -605,7 +587,7 @@ module set_counter ( clk, reset, counting_reset, counting_en, cout );
   wire   N6, N7, N8, N9, N10, N11, N12, N13, n2, n3, n4, n5, n6, n7, n8, n9,
          n10, n11, n1;
 
-  set_counter_DW01_inc_0_DW01_inc_1 add_275 ( .A(cout), .SUM({N13, N12, N11, 
+  set_counter_DW01_inc_0_DW01_inc_1 add_277 ( .A(cout), .SUM({N13, N12, N11, 
         N10, N9, N8, N7, N6}) );
   DFFRX1 \cout_reg[7]  ( .D(n4), .CK(clk), .RN(n1), .Q(cout[7]) );
   DFFRX1 \cout_reg[6]  ( .D(n5), .CK(clk), .RN(n1), .Q(cout[6]) );
@@ -636,13 +618,12 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
   output [7:0] candidate;
   input clk, rst, en;
   output busy, valid;
-  wire   counting_reset_x, counting_reset_y, counting_en_y, counting_en,
-         \state[0] , N0, N1, N2, N3, N4, N5, n15, n16, n17, n18, n19, n20, n21,
-         n22, n23, n24, n25, n26, n27, n28, n29, n30, n31, n32, n33, n34, n35,
-         n36, n37, n38, n39, n40, n41, n42, n43, n44, n45, n46, n47, n48, n49,
-         n50, n51, n52, n53, n54, n55, n56, n57, n58, n59, n60, n61, n62, n63,
-         n64, n65, n69, n70, n71, n72, n73, n74, n75, n76, n77, n78, n79, n80,
-         n81, n82;
+  wire   counting_en, \state[0] , N0, N1, N2, N3, N4, N5, n15, n16, n17, n18,
+         n19, n20, n21, n22, n23, n24, n25, n26, n27, n28, n29, n30, n31, n32,
+         n33, n34, n35, n36, n37, n38, n39, n40, n41, n42, n43, n44, n45, n46,
+         n47, n48, n49, n50, n51, n52, n53, n54, n55, n56, n57, n58, n59, n60,
+         n61, n62, n63, n64, n65, n69, n70, n71, n72, n73, n74, n75, n76, n77,
+         n78, n79;
   wire   [23:0] central_next;
   wire   [11:0] radius_next;
   wire   [1:0] mode_next;
@@ -683,9 +664,6 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
 
   din_FF din_FF1 ( .clk(clk), .reset(rst), .en(en), .central_next(central_next), .radius_next(radius_next), .mode_next(mode_next), .central(central), 
         .radius(radius), .mode(mode) );
-  FF FF1 ( .clk(clk), .reset(rst), .counting_reset_x_next(1'b0), 
-        .counting_reset_y_next(1'b0), .counting_en_y_next(1'b0), 
-        .counting_reset_x(n82), .counting_reset_y(n81), .counting_en_y(n80) );
   set_counting_enable SCE ( .xy_sqr1(xy_sqr1), .xy_sqr2(xy_sqr2), .xy_sqr3(
         xy_sqr3), .r1_sqr({1'b0, r1_sqr[6:2], 1'b0, r1_sqr[0]}), .r2_sqr({1'b0, 
         r2_sqr[6:2], 1'b0, r2_sqr[0]}), .r3_sqr({1'b0, r3_sqr[6:2], 1'b0, 
@@ -710,9 +688,10 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
         r2_sqr[6:2], SYNOPSYS_UNCONNECTED__15, r2_sqr[0]}) );
   multi_table_1 MT9 ( .in(radius_next[3:0]), .out({SYNOPSYS_UNCONNECTED__16, 
         r3_sqr[6:2], SYNOPSYS_UNCONNECTED__17, r3_sqr[0]}) );
-  counter counter_x ( .clk(clk), .reset(rst), .counting_reset(counting_reset_x), .cout(cout_x) );
-  counter2 counter_y ( .clk(clk), .reset(rst), .counting_reset(
-        counting_reset_y), .counting_en(counting_en_y), .cout(cout_y) );
+  counter counter_x ( .clk(clk), .reset(rst), .counting_reset(N0), .cout(
+        cout_x) );
+  counter2 counter_y ( .clk(clk), .reset(rst), .counting_reset(n65), 
+        .counting_en(N1), .cout(cout_y) );
   set_counter SC ( .clk(clk), .reset(rst), .counting_reset(n65), .counting_en(
         N4), .cout(candidate) );
   XNOR2X1 U98 ( .A(n34), .B(n35), .Y(y_diff1[2]) );
@@ -757,14 +736,14 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
         .CO(xy_sqr3[7]), .S(xy_sqr3[6]) );
   CLKINVX1 U126 ( .A(n22), .Y(n69) );
   CLKINVX1 U127 ( .A(n46), .Y(n75) );
-  AND3X2 U128 ( .A(N3), .B(n79), .C(counting_en), .Y(N4) );
-  XOR2X1 U129 ( .A(n31), .B(n32), .Y(y_diff1[3]) );
-  XNOR2X1 U130 ( .A(cout_y[3]), .B(central_next[19]), .Y(n32) );
-  OAI2BB2XL U131 ( .B0(cout_y[2]), .B1(n33), .A0N(n34), .A1N(central_next[18]), 
+  OAI2BB1X1 U128 ( .A0N(n71), .A1N(central_next[17]), .B0(n36), .Y(n34) );
+  OAI21XL U129 ( .A0(central_next[17]), .A1(n71), .B0(n73), .Y(n36) );
+  AND3X2 U130 ( .A(N3), .B(n79), .C(counting_en), .Y(N4) );
+  XOR2X1 U131 ( .A(n31), .B(n32), .Y(y_diff1[3]) );
+  XNOR2X1 U132 ( .A(cout_y[3]), .B(central_next[19]), .Y(n32) );
+  OAI2BB2XL U133 ( .B0(cout_y[2]), .B1(n33), .A0N(n34), .A1N(central_next[18]), 
         .Y(n31) );
-  NOR2X1 U132 ( .A(central_next[18]), .B(n34), .Y(n33) );
-  OAI2BB1X1 U133 ( .A0N(n71), .A1N(central_next[17]), .B0(n36), .Y(n34) );
-  OAI21XL U134 ( .A0(central_next[17]), .A1(n71), .B0(n73), .Y(n36) );
+  NOR2X1 U134 ( .A(central_next[18]), .B(n34), .Y(n33) );
   NOR2X1 U135 ( .A(n72), .B(central_next[16]), .Y(n38) );
   CLKINVX1 U136 ( .A(cout_y[0]), .Y(n72) );
   OAI2BB1X1 U137 ( .A0N(n77), .A1N(central_next[21]), .B0(n60), .Y(n58) );
@@ -778,13 +757,13 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
   XOR2X1 U144 ( .A(cout_y[2]), .B(central_next[18]), .Y(n35) );
   XOR2X1 U145 ( .A(cout_x[2]), .B(central_next[22]), .Y(n59) );
   CLKINVX1 U146 ( .A(cout_x[0]), .Y(n78) );
-  XOR2X1 U147 ( .A(n23), .B(n24), .Y(y_diff2[3]) );
-  XNOR2X1 U148 ( .A(cout_y[3]), .B(central_next[11]), .Y(n24) );
-  OAI2BB2XL U149 ( .B0(cout_y[2]), .B1(n25), .A0N(n26), .A1N(central_next[10]), 
+  OAI2BB1X1 U147 ( .A0N(n70), .A1N(central_next[9]), .B0(n28), .Y(n26) );
+  OAI21XL U148 ( .A0(central_next[9]), .A1(n70), .B0(n73), .Y(n28) );
+  XOR2X1 U149 ( .A(n23), .B(n24), .Y(y_diff2[3]) );
+  XNOR2X1 U150 ( .A(cout_y[3]), .B(central_next[11]), .Y(n24) );
+  OAI2BB2XL U151 ( .B0(cout_y[2]), .B1(n25), .A0N(n26), .A1N(central_next[10]), 
         .Y(n23) );
-  NOR2X1 U150 ( .A(central_next[10]), .B(n26), .Y(n25) );
-  OAI2BB1X1 U151 ( .A0N(n70), .A1N(central_next[9]), .B0(n28), .Y(n26) );
-  OAI21XL U152 ( .A0(central_next[9]), .A1(n70), .B0(n73), .Y(n28) );
+  NOR2X1 U152 ( .A(central_next[10]), .B(n26), .Y(n25) );
   NOR2X1 U153 ( .A(n72), .B(central_next[8]), .Y(n30) );
   XOR2X1 U154 ( .A(cout_y[2]), .B(central_next[10]), .Y(n27) );
   OAI2BB1X1 U155 ( .A0N(n76), .A1N(central_next[13]), .B0(n52), .Y(n50) );
@@ -809,12 +788,12 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
   XOR2X1 U173 ( .A(cout_y[2]), .B(central_next[2]), .Y(n19) );
   OAI2BB1X1 U174 ( .A0N(n69), .A1N(central_next[1]), .B0(n20), .Y(n18) );
   OAI21XL U175 ( .A0(central_next[1]), .A1(n69), .B0(n73), .Y(n20) );
-  XOR2X1 U176 ( .A(n15), .B(n16), .Y(y_diff3[3]) );
-  XNOR2X1 U177 ( .A(cout_y[3]), .B(central_next[3]), .Y(n16) );
-  OAI2BB2XL U178 ( .B0(cout_y[2]), .B1(n17), .A0N(n18), .A1N(central_next[2]), 
+  NOR2X1 U176 ( .A(n72), .B(central_next[0]), .Y(n22) );
+  XOR2X1 U177 ( .A(n15), .B(n16), .Y(y_diff3[3]) );
+  XNOR2X1 U178 ( .A(cout_y[3]), .B(central_next[3]), .Y(n16) );
+  OAI2BB2XL U179 ( .B0(cout_y[2]), .B1(n17), .A0N(n18), .A1N(central_next[2]), 
         .Y(n15) );
-  NOR2X1 U179 ( .A(central_next[2]), .B(n18), .Y(n17) );
-  NOR2X1 U180 ( .A(n72), .B(central_next[0]), .Y(n22) );
+  NOR2X1 U180 ( .A(central_next[2]), .B(n18), .Y(n17) );
   XOR2X1 U181 ( .A(cout_x[2]), .B(central_next[6]), .Y(n43) );
   OAI2BB1X1 U182 ( .A0N(n75), .A1N(central_next[5]), .B0(n44), .Y(n42) );
   OAI21XL U183 ( .A0(central_next[5]), .A1(n75), .B0(n74), .Y(n44) );
@@ -851,8 +830,5 @@ module SET ( clk, rst, en, central, radius, mode, busy, valid, candidate );
   AND2X1 U211 ( .A(y_diff1_out[2]), .B(x_diff1_out[2]), .Y(\add_57/carry [3])
          );
   XOR2X1 U212 ( .A(y_diff1_out[2]), .B(x_diff1_out[2]), .Y(xy_sqr1[2]) );
-  AND2X1 U213 ( .A(N0), .B(n82), .Y(counting_reset_x) );
-  AND2X1 U214 ( .A(n65), .B(n81), .Y(counting_reset_y) );
-  AND2X1 U215 ( .A(N1), .B(n80), .Y(counting_en_y) );
 endmodule
 
